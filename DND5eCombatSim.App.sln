@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32510.428
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DND5eCombatSim.App", "DND5eCombatSim.App\DND5eCombatSim.App.csproj", "{8FA4C280-DF7C-4C23-9BE8-C50361050B24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DND5eCombatSim.Shared", "DND5eCombatSim.Shared\DND5eCombatSim.Shared.csproj", "{97BE57CE-4953-4EB4-B5C6-F6F5783916FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8FA4C280-DF7C-4C23-9BE8-C50361050B24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FA4C280-DF7C-4C23-9BE8-C50361050B24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FA4C280-DF7C-4C23-9BE8-C50361050B24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FA4C280-DF7C-4C23-9BE8-C50361050B24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97BE57CE-4953-4EB4-B5C6-F6F5783916FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97BE57CE-4953-4EB4-B5C6-F6F5783916FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97BE57CE-4953-4EB4-B5C6-F6F5783916FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97BE57CE-4953-4EB4-B5C6-F6F5783916FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {44A24B3A-B5EB-405A-AEE1-486174DBFE56}
+	EndGlobalSection
+EndGlobal
