@@ -39,7 +39,7 @@ else
                     <td>@characters.ArmorId</td>
                     <td>@characters.WeaponId</td>
                     <td>@characters.MatchWins</td>
-                    <td>@characters.TotalMatches - characters.MatchWins</td>
+                    <td>@characters.TotalMatches - @characters.MatchWins</td>
                     <td>@characters.TotalMatches</td>
                     <td>69%</td>
                     <td>
@@ -63,9 +63,9 @@ else
         <thead>
             <tr>
                 <th></th>
-                <th>Armor Id</th>
-                <th>Armor Name</th>
-                <th>Armor Type</th>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Type</th>
                 <th>AC</th>
                 <th></th>
             </tr>
@@ -102,38 +102,38 @@ else
         <thead>
             <tr>
                 <th></th>
-                <th>Character Name</th>
-                <th>AC</th>
-                <th>Armor Id</th>
-                <th>Weapon Id</th>
-                <th>Wins</th>
-                <th>Losses</th>
-                <th>Total Games</th>
-                <th>Win-Loss Percentage</th>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Attack+Damage Stat</th>
+                <th>Minimum Damage</th>
+                <th>Maximum Damage</th>
+                <th>Damage Bonus</th>
+                <th>Picture</th>
                 <th></th>
             </tr>
         </thead>
 
         <tbody>
-            @foreach (var characters in CharactersList)
+            @foreach (var weapon in WeaponList)
             {
-                <tr>
-                    @*<td><img src="@($"https://gillcleerenpluralsight.blob.core.windows.net/person/{characters.CharacterId}-small.jpg")" class="rounded-circle" /></td>*@
-                    <td></td>
-                    <td>@characters.CharacterName</td>
-                    <td>@characters.AC</td>
-                    <td>@characters.ArmorId</td>
-                    <td>@characters.WeaponId</td>
-                    <td>@characters.MatchWins</td>
-                    <td>@characters.TotalMatches - characters.MatchWins</td>
-                    <td>@characters.TotalMatches</td>
-                    <td>69%</td>
-                    <td>
-                        @*<a href="@($"employeedetail/{employee.EmployeeId}")" class="btn btn-primary table-btn">
-                                <i class="fas fa-info-circle"></i>
-                            </a>*@
-                    </td>
-                </tr>
+            <tr>
+                @*<td><img src="@($"https://gillcleerenpluralsight.blob.core.windows.net/person/{characters.CharacterId}-small.jpg")" class="rounded-circle" /></td>*@
+                <td></td>
+                <td>@weapon.WeaponId</td>
+                <td>@weapon.WeaponName</td>
+                <td>@weapon.WeaponType</td>
+                <td>@weapon.CharacterStatDependancy</td>
+                <td>@weapon.WeaponDamageFloor</td>
+                <td>@weapon.WeaponDamageCeiling</td>
+                <td>+ @weapon.WeaponDamageBonus</td>
+                <td>@weapon.WeaponPicture</td>
+                <td>
+                    @*<a href="@($"employeedetail/{employee.EmployeeId}")" class="btn btn-primary table-btn">
+                <i class="fas fa-info-circle"></i>
+            </a>*@
+                </td>
+            </tr>
             }
         </tbody>
     </table>
