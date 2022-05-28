@@ -6,7 +6,7 @@ namespace DND5eCombatSim.Shared
 {
     public class Character
     {
-        //public string CharacterId { get; set; }
+        public int CharacterId { get; set; }
 
         public string CharacterName { get; set; }
 
@@ -53,9 +53,11 @@ namespace DND5eCombatSim.Shared
         //public int NumberOfAttacks { get; set; }
 
         public int WeaponId { get; set; }
-        
+
+        public int ArmorId { get; set; }
+
         //public bool SimpleWeaponProficiency { get; set; }
-        
+
         //public bool MartialWeaponProficiency { get; set; }
 
         public int AC { get; set; }
@@ -65,17 +67,14 @@ namespace DND5eCombatSim.Shared
         //public bool LightArmorProficiency { get; set; }
 
         //public bool MediumArmorProficiency { get; set; }
-        
+
         //public bool HeavyArmorProficiency { get; set; }
 
         //public bool ShieldProficiency { get; set; }
 
-        //public int MatchWins { get; set; }
+        public int MatchWins { get; set; }
 
-        //public int MatchLosses { get; set; }
+        public int TotalMatches { get; set; }
 
-        //public int TotalMatches { get; set; }
-
-        //public int WinLossPercentage { get; set; }
     }
 }

@@ -6,7 +6,7 @@ namespace DND5eCombatSim.Shared
 {
     public class Armor
     {
-        public string ArmorId { get; set; }
+        public int ArmorId { get; set; }
 
         public string ArmorName { get; set; }
 

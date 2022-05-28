@@ -6,7 +6,7 @@ namespace DND5eCombatSim.Shared
 {
     public class Weapon
     {
-        public string WeaponId { get; set; }
+        public int WeaponId { get; set; }
 
         public string WeaponName { get; set; }
 
