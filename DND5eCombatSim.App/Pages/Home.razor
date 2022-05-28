@@ -6,6 +6,139 @@
 <h3>Brief description: This will more than likely replace the index page, but for now will just serve to be a place holder to make sure that everything works the way i envision it</h3>
 <br />
 
+@if (CharactersList == null)
+{
+    <p><em>Loading Characters...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Character Name</th>
+                <th>AC</th>
+                <th>Armor Id</th>
+                <th>Weapon Id</th>
+                <th>Wins</th>
+                <th>Losses</th>
+                <th>Total Games</th>
+                <th>Win-Loss Percentage</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var characters in CharactersList)
+            {
+                <tr>
+                    @*<td><img src="@($"https://gillcleerenpluralsight.blob.core.windows.net/person/{characters.CharacterId}-small.jpg")" class="rounded-circle" /></td>*@
+                    <td></td>
+                    <td>@characters.CharacterName</td>
+                    <td>@characters.AC</td>
+                    <td>@characters.ArmorId</td>
+                    <td>@characters.WeaponId</td>
+                    <td>@characters.MatchWins</td>
+                    <td>@characters.TotalMatches - characters.MatchWins</td>
+                    <td>@characters.TotalMatches</td>
+                    <td>69%</td>
+                    <td>
+                        @*<a href="@($"employeedetail/{employee.EmployeeId}")" class="btn btn-primary table-btn">
+                                <i class="fas fa-info-circle"></i>
+                            </a>*@
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@if (CharactersList == null)
+{
+    <p><em>Loading Armor...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Armor Id</th>
+                <th>Armor Name</th>
+                <th>Armor Type</th>
+                <th>AC</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var armor in ArmorList)
+            {
+                <tr>
+                    @*<td><img src="@($"https://gillcleerenpluralsight.blob.core.windows.net/person/{characters.CharacterId}-small.jpg")" class="rounded-circle" /></td>*@
+                    <td>@armor.ArmorId</td>
+                    <td>@armor.ArmorName</td>
+                    <td>@armor.ArmorType</td>
+                    <td>@armor.AC</td>
+                    <td>
+                        @*<a href="@($"employeedetail/{employee.EmployeeId}")" class="btn btn-primary table-btn">
+                                <i class="fas fa-info-circle"></i>
+                            </a>*@
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@if (CharactersList == null)
+{
+    <p><em>Loading Weapons...</em></p>
+}
+@*new Weapon{ WeaponId = 1, WeaponName = "Dagger", WeaponType = "Simple", CharacterStatDependancy = "Dex", WeaponDamageFloor = 1, WeaponDamageCeiling = 4, WeaponDamageBonus = 0, WeaponPicture = "Picture" },*@
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Character Name</th>
+                <th>AC</th>
+                <th>Armor Id</th>
+                <th>Weapon Id</th>
+                <th>Wins</th>
+                <th>Losses</th>
+                <th>Total Games</th>
+                <th>Win-Loss Percentage</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var characters in CharactersList)
+            {
+                <tr>
+                    @*<td><img src="@($"https://gillcleerenpluralsight.blob.core.windows.net/person/{characters.CharacterId}-small.jpg")" class="rounded-circle" /></td>*@
+                    <td></td>
+                    <td>@characters.CharacterName</td>
+                    <td>@characters.AC</td>
+                    <td>@characters.ArmorId</td>
+                    <td>@characters.WeaponId</td>
+                    <td>@characters.MatchWins</td>
+                    <td>@characters.TotalMatches - characters.MatchWins</td>
+                    <td>@characters.TotalMatches</td>
+                    <td>69%</td>
+                    <td>
+                        @*<a href="@($"employeedetail/{employee.EmployeeId}")" class="btn btn-primary table-btn">
+                                <i class="fas fa-info-circle"></i>
+                            </a>*@
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
 <DND5eCombatSim.App.Components.CharacterList></DND5eCombatSim.App.Components.CharacterList>
 <br />
 
